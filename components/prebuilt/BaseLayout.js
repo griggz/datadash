@@ -117,7 +117,7 @@ function HfcApp(props) {
   };
 
   const handleLogout = (event) => {
-    router.push("/");
+    router.reload()
   };
 
   const childrenWithProps = React.Children.map(props.children, (child) => {
